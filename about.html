@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Siyomunji Law Chambers</title>
+  <meta name="description" content="About Siyomunji Law Chambers — founded to deliver effective, affordable legal solutions to every Namibian."/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-brand">
+    <img src="logo.png" alt="Siyomunji Law Chambers" class="nav-logo"/>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Siyomunji Law Chambers</span>
+      <span class="nav-brand-sub">Windhoek, Namibia</span>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="practice.html">Practice Areas</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1453945619913-79ec89a82c51?auto=format&fit=crop&w=1800&q=85');"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-eyebrow">About the Firm</div>
+    <h1>Principled Law.<br><em>For Every Namibian.</em></h1>
+  </div>
+</div>
+
+<section class="about-section">
+  <div class="section-inner">
+    <div class="about-layout">
+      <div class="about-photo-wrap fade-up">
+        <img class="about-photo" src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?auto=format&fit=crop&w=800&q=85" alt="Siyomunji Law Chambers" loading="lazy"/>
+        <div class="about-badge">
+          <strong>Windhoek</strong>
+          <span>Law Chambers</span>
+        </div>
+      </div>
+      <div class="about-text fade-up">
+        <div class="eyebrow">Who We Are</div>
+        <h2 class="section-h" style="color:var(--dark)">Founded to Serve Every Namibian</h2>
+        <p>Siyomunji Law Chambers was founded with the desire to provide and deliver effective legal solutions affordable to the average man — and to reach out to the most vulnerable and less privileged members of our society.</p>
+        <p>We clearly understand what clients need in the context of the broader issues at stake. By balancing these dynamics and applying our legal expertise, we provide effective, appropriate, and efficient advice to solve the challenges our clients face — and to help create opportunities that move their enterprises forward.</p>
+        <blockquote class="pull">
+          <p>"We clearly understand what clients need. We provide effective, appropriate and efficient advice — to solve challenges and create opportunities."</p>
+          <cite>— Siyomunji Law Chambers</cite>
+        </blockquote>
+        <p>The firm is authorised and regulated by the Law Society of Namibia, and maintains right of appearance in the Magistrate's Courts, the High Court, and the Supreme Court of Namibia.</p>
+      </div>
+    </div>
+    <div class="about-gallery">
+      <div class="about-gallery-item fade-up"><img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=900&q=80" alt="Law office" loading="lazy"/></div>
+      <div class="about-gallery-item fade-up"><img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="Legal scales" loading="lazy"/></div>
+      <div class="about-gallery-item fade-up"><img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80" alt="Legal library" loading="lazy"/></div>
+      <div class="about-gallery-item fade-up"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80" alt="Professional" loading="lazy"/></div>
+      <div class="about-gallery-item fade-up"><img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=600&q=80" alt="Courthouse" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<div class="quote-strip">
+  <blockquote>Our vision is to offer a wholesome spectrum of professional legal services to every client who walks through our doors.</blockquote>
+  <cite>— Our Vision</cite>
+</div>
+
+<footer>
+  <div class="footer-brand">
+    <img src="logo.png" alt="Siyomunji Law Chambers" class="footer-logo"/>
+    <span class="footer-brand-text">Siyomunji <em>Law Chambers</em></span>
+  </div>
+  <div class="footer-right">
+    <small>Authorised and regulated by the Law Society of Namibia</small><br>
+    <small>&copy; 2026 &middot; Windhoek, Namibia &middot; All rights reserved</small>
+  </div>
+</footer>
+<button class="back-top" id="backTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
+<script>
+  window.scrollTo(0,0);
+  const obs = new IntersectionObserver(entries => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  const ham = document.getElementById('hamburger'); const nav = document.getElementById('navLinks');
+  ham.addEventListener('click', () => { ham.classList.toggle('open'); nav.classList.toggle('open'); });
+  const bt = document.getElementById('backTop');
+  window.addEventListener('scroll', () => { bt.classList.toggle('show', window.scrollY > 400); });
+  bt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
